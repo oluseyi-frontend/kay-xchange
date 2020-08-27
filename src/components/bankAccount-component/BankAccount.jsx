@@ -61,6 +61,27 @@ const BankAccountForm = ({ match }) => {
         }
       });
     }
+      if (CURRENCY_NAME === "ltc") {
+        myWallets.map((wallet) => {
+          if (wallet.id === CURRENCY_NAME) {
+            SETWALLET_ID(wallet.value);
+          }
+        });
+      }
+      if (CURRENCY_NAME === "usdt") {
+        myWallets.map((wallet) => {
+          if (wallet.id === CURRENCY_NAME) {
+            SETWALLET_ID(wallet.value);
+          }
+        });
+      }
+      if (CURRENCY_NAME === "xmr") {
+        myWallets.map((wallet) => {
+          if (wallet.id === CURRENCY_NAME) {
+            SETWALLET_ID(wallet.value);
+          }
+        });
+      }
   }, [myWallets]);
   const FetchWalletAddress = () => {
     Axios.get(API)
@@ -79,8 +100,6 @@ const BankAccountForm = ({ match }) => {
     
 
       if (callbacks.length > 0) {
-        //setOpenModal(false);
-
         callbacks.map((item) => {
           addOrderToDatabase(item.txid_in, item.value_coin, item.last_update);
           if (item.value_coin < currencyQuantity) {

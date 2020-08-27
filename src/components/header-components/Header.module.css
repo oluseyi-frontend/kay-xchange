@@ -15,8 +15,11 @@ svg{
 }
 .myNavBarNav {
   align-items: center;
+  
 }
-
+.navbar-toggler-icon{
+  background-color: white !important;
+}
 .myHeaderActive {
   background: linear-gradient(90deg, #70cfda 0%, #2b2fa1 45%);
   transition: all 1.5s ease-in-out;

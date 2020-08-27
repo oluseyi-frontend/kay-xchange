@@ -5,7 +5,7 @@ import { useState } from "react";
 import firebase from "./../firebase-component/firebase";
 export const DataCentral = React.createContext();
 const CryptoExchangeContext = (props) => {
-  const CRYPTO_PRICES = `https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,DOGE,LTC,STEEM,SBD,HIVE,HBD,ETH,BCH,USDT,IOTA&tsyms=USD,EUR&api_key={a36270f8a9e8c6ae57776a51d10c8c2446a1597335a4f05d781a4cc7c7320265}`;
+  const CRYPTO_PRICES = `https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XMR,BCH,USDT,LTC,STEEM,SBD,HIVE,HBD&tsyms=USD,EUR&api_key={a36270f8a9e8c6ae57776a51d10c8c2446a1597335a4f05d781a4cc7c7320265}`;
   const [cryptoPrices, setCryptoPrices] = useState([]);
   const [cryptoCurrencies, setCryptoCurrencies] = useState([]);
   const [cryptoInString, setCryptoInString] = useState("");

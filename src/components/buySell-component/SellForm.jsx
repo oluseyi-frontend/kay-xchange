@@ -45,6 +45,8 @@ const SellForm = () => {
     myPrices.map((myPrice) => {
       if (myPrice.id === nameOfCurrency) {
         setMyRate(myPrice.price)
+      } else {
+        
       }
     })
    
