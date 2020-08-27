@@ -1,0 +1,146 @@
+.body {
+    width: 100%;
+    background-color: white;
+    color: #3F51B5;
+}
+.bodyContainer {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.SimpleSecureSeamless{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.illustrations {
+  margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.illustrations img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.typo {
+    text-align: center;
+    margin-top: 1rem !important;
+}
+
+.beforeFooter{
+    background: url(./../images/background2.jpg);
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        z-index: -1;
+        display: flex;
+}
+
+.beforeFooterContainer {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+.beforeFootertypo{
+      text-align: center;
+      margin-top: 1rem !important;    
+}
+.btnDiv{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 2rem;
+}
+.btn{
+    width: 40%;
+    padding: 1rem !important;
+}
+
+
+@media(max-width: 1200px) {
+  .bodyContainer {
+      width: 80%;  
+  }
+  .beforeFooterContainer {
+      width: 80%;
+     
+  }
+}
+
+@media(max-width: 992px) {
+     .bodyContainer {
+         width: 95%;
+     }
+      .beforeFooterContainer {
+          width: 90%;
+      }
+}
+
+@media(max-width: 768px) {
+    .SimpleSecureSeamless h3 {
+      font-size: 2.5rem;
+    }
+.SimpleSecureSeamless span {
+    font-size: .9rem;
+}
+.beforeFooterContainer {
+    width: 95%;
+
+}
+.beforeFooter h5 {
+   font-size: 1.2rem;
+}
+.beforeFooter h6 {
+    font-size: 1rem;
+}
+.beforeFooter button{
+    width: 60%;
+}
+
+}
+
+@media(max-width: 576px) {
+    .SimpleSecureSeamless h3 {
+        font-size: 2rem;
+    }
+
+    .SimpleSecureSeamless span {
+      
+        text-align: center;
+    }
+    .beforeFooter button {
+        width: 70%;
+    }
+    .beforeFooterContainer {
+         margin-top: 4rem;
+         margin-bottom: 6rem;
+    }
+    
+}
+
+@media(max-width: 380px) {
+   .beforeFooter button {
+       width: 80%;
+   }
+}

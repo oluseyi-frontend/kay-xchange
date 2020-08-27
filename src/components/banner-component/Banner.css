@@ -1,0 +1,111 @@
+.headerBanner {
+    width: 100%;
+    background: url(./../images/401.jpg);
+    display: flex;
+}
+.my-container {
+    min-width: 100% !important;
+}
+.row{
+ margin-top: 4rem;
+ width: 100%;
+ margin-bottom: 1rem;
+}
+.my-fading-carousel{
+    
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.my-fading-carousel h3{
+    font-size: 3.6rem;
+    font-weight: 1000;
+    color: white;
+}
+.my-fading-carousel p{
+    color: white;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+.my-fading-carousel button{
+    width: 50%;
+    background-color:#41B661;
+    padding: .7rem ;
+    margin-top: 1.5rem;
+}
+.my-fading-carousel button:hover {
+    background-color: #5ccc7a;  
+}
+.my-fading-carousel button:focus {
+    outline: none;
+}
+@media(max-width: 1200px) {
+    .my-fading-carousel h3 {
+        font-size: 3.2rem;
+        font-weight: 1000;
+        color: white;
+    }
+    .my-fading-carousel{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width: 992px) {
+  .my-fading-carousel {
+      width: 90%;
+  }
+  .my-fading-carousel h3 {
+      font-size: 2.8rem;
+      font-weight: 1000;
+      color: white;
+  }
+}
+
+@media(max-width: 768px) {
+    .my-fading-carousel {
+        width: 95%;
+    }
+  .banner-mockup{
+      display: none;
+  }
+  .my-fading-carousel h3 {
+      font-size: 2.2rem;
+      font-weight: 1000;
+      color: white;
+  }
+  .my-fading-carousel p{
+      font-size: 1rem;
+  }
+
+}
+
+@media(max-width: 576px) {
+     .my-fading-carousel h3 {
+         font-size: 1.8rem;
+         font-weight: 1000;
+         color: white;
+     }
+
+     .my-fading-carousel p {
+         font-size: .9rem;
+     }
+     .my-fading-carousel button {
+         width: 60%;
+         background-color: #41B661;
+         margin-top: 1.5rem;
+         font-size: small;
+     }
+}
+
+@media(max-width: 380px) {
+    .my-fading-carousel h3 {
+        font-size: 1.8rem;
+        font-weight: 1000;
+        color: white;
+    }
+
+    .my-fading-carousel p {
+        font-size: .8rem;
+    }
+}

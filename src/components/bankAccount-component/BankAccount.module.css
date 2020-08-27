@@ -1,0 +1,108 @@
+.bankAccountForm {
+    width: 100%;
+    background: url(./../images/background3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+}
+
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container form {
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.5rem;
+    border-radius: 3px;
+    margin-bottom: 2.5rem;
+}
+
+.text {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: #262994;
+    margin-top: 1rem;
+}
+
+.text h5 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-weight: 350;
+}
+
+.select {
+    width: 100% !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.textField{
+     width: 100% !important;
+     margin-top: 1rem !important;
+     margin-bottom: 1rem !important;
+}
+
+.btn{
+    margin-top: 1rem !important;
+   margin-bottom: 2rem !important;
+}
+
+.btn button {
+     padding: .8rem;
+
+}
+
+
+@media(max-width: 1200px) {
+    .container {
+        width: 55%;
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+.container form { 
+    margin-top: 2.5rem;
+}
+   
+
+}
+
+@media(max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .container form {
+        margin-top: 2.5rem;
+    }
+
+  
+}
+
+@media(max-width: 380px) {
+    .container {
+        width: 95%;
+    }
+.container form {
+    margin-top: 2.5rem;
+}
+  
+}

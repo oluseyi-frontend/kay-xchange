@@ -1,0 +1,17 @@
+marquee{ 
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.myMarquee{
+    display: flex;  
+}
+
+.myCard{
+    display: flex;
+    width: 200px;
+    display: inline-flex;
+    background:#e4e8f0 !important;
+    border: .5px solid rgba(0, 0, 0, 0.205);
+    font-weight: bold !important;
+}

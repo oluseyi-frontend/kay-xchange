@@ -1,0 +1,63 @@
+.footer{
+    width: 100%;
+    display: flex;
+     background:linear-gradient(90deg, #70cfda 0%, #2b2fa1 45%);
+     color: white;
+}
+
+.footerContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.anchorGrid{
+display: flex;
+justify-content: flex-end;
+}
+.arrGrid{
+    display: flex;
+    justify-content: flex-start;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+}
+
+
+.anchorGrid a {
+    margin: 0 0 0 2rem;
+    color: white;
+}
+
+.anchorGrid svg {
+    color: white;
+}
+
+.grid a {
+    color: white;
+}
+.grid a:hover {
+    color: rgb(218, 213, 213);
+}
+@media (max-width: 960px){
+    .anchorGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .anchorGrid a {
+        margin: .5rem 0 
+    }
+    .grid{
+        display: flex;
+        
+        justify-content: center;
+    }
+
+    .arrGrid{
+        justify-content: center;
+    }
+}
+

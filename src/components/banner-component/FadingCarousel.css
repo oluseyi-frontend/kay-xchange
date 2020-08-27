@@ -1,0 +1,25 @@
+.first-quote{
+  
+  display: flex;
+
+ transition: 2s all ease;
+ 
+ 
+}
+.second-quote {
+ 
+ display: flex;
+  transition: 2s all ease;
+ 
+  
+}
+.third-quote {
+
+    display: flex;
+  transition: 2s all ease ;
+}
+.quote-active{
+    display: none;
+    visibility: hidden;
+    font-size: 2.5rem;
+}

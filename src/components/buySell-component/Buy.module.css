@@ -1,0 +1,220 @@
+
+
+
+.BuyComponent {
+
+    background: url(./../images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.container {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+}
+
+form{
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  
+    border-radius: 3px;
+    margin-bottom: 2.5rem;
+}
+.illustration{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  text-align: center;
+}
+.illustration img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.illustration p{
+    text-align: center;
+}
+
+.text{
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: #262994;
+    margin-top: 1rem;
+}
+.buyForm{
+    
+}
+
+
+
+.text h4{
+    font-size: 2.2rem;
+    font-weight: normal;
+    font-weight: 350;
+}
+.text p{
+    font-size: 1.2rem;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+}
+.buyBtn {
+    border: none !important;
+    background-color: transparent !important;
+    color: black !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    
+    
+}
+.buyBtn:focus {
+    color: black !important;
+    outline: none;
+    border-bottom: 2px solid purple !important;
+    border-radius: 0px !important;
+
+}
+
+.sellBtn {
+    border: none !important;
+    background-color: white !important;
+    color: black !important;
+    border-radius: 0px !important;
+     box-shadow: none !important;
+}
+.sellBtn:focus {
+  background-color: transparent !important;
+  color: black !important;
+  outline: none;
+  border-bottom: 2px solid purple !important;
+  border-radius: 0px !important;
+}
+
+.select{
+    width: 100% !important;
+    margin: 1rem 0rem !important;
+}
+.continueBtn{
+    width: 100%;
+}
+.continueBtn button{
+    padding: 0 !important;
+}
+
+.continueBtn button:focus {
+    outline: none;
+}
+.chip{
+    margin-bottom: 1rem;
+    color: red !important;
+    font-size: 1rem !important;
+   
+}
+.chip span{
+ display: flex !important;
+}
+.chip p {
+    margin: 0 .5rem;
+    text-transform: uppercase !important;
+}
+
+.anchor {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.anchor:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media(max-width: 1200px) {
+ .container {
+     width: 55%;
+ }
+}
+
+@media(max-width: 992px) {
+ .container {
+     width: 70%;
+ }
+}
+
+@media(max-width: 768px) {
+ .container {
+     width: 80%;
+ }
+ .illustration img {
+     height: 200px;
+     width: 200px;
+     border-radius: 50%;
+ }
+ .text h4 {
+     font-size: 1.8rem;
+ }
+
+ .text p {
+     font-size: 1.1rem;
+ }
+ form {
+   
+ }
+
+}
+
+@media(max-width: 576px) {
+ .container {
+     width: 90%;
+ }
+ .text h4 {
+     font-size: 1.8rem;
+ }
+
+ .text p {
+     font-size: 1rem;
+ }
+ .illustration img {
+     height: 180px;
+     width: 180px;
+     border-radius: 50%;
+ }
+  marquee span {
+      font-size: .8rem;
+  }
+
+  marquee span p {
+      font-size: .8rem;
+  }
+
+}
+
+@media(max-width: 380px) {
+ .container {
+     width: 95%;
+ }
+ .text h4 {
+     font-size: 1.4rem;
+ }
+
+ .text p {
+     font-size: .8rem;
+ }
+ marquee span{
+     font-size: .8rem;
+ }
+  marquee span p {
+      font-size: .8rem;
+  }
+}
