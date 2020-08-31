@@ -13,15 +13,14 @@ const BuySell = () => {
 
   const handleChange = (event) => {
     setSwitchValue(!switchValue);
-    console.log(switchValue);
+   
   };
 
   const handleSubmit = () => {
-    console.log("submitted");
+  
   };
 
   const handleClick = (event) => {
-    console.log(event.target.textContent);
     const { textContent } = event.target;
 
     if (textContent === "SELL") {

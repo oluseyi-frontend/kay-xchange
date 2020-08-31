@@ -58,6 +58,36 @@ justify-content: flex-end;
 
     .arrGrid{
         justify-content: center;
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .anchorGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .anchorGrid a {
+        margin: .5rem 0
+    }
+
+    .grid {
+        display: flex;
+
+        justify-content: center;
+    }
+
+    .arrGrid {
+        justify-content: center;
+        font-size: .9rem;
+    }
+
+    .footerContainer{
+        width: 100%;
+        padding: 1rem;
     }
 }
 

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "../header-components/Header";
 import Banner from "../banner-component/Banner";
 import styles from "./App.module.css";
@@ -13,9 +13,13 @@ import Login from './../login-components/Login';
 import { DataCentral } from './../context-component/Context';
 import SignUp from './../create-account-component/SignUp';
 import Faq from './../faq-component/Faq';
+import BuyingBankForm from './../bankAccount-component/BuyingBankAccount';
+import UserProfile from './../userProfile-component/UserProfile';
+import ForgotPassword from './../forgot=password-component/ForgotPassword';
 
 const App = () => {
-  const {user, setUser} = useContext(DataCentral)
+  const { user, setUser, currentUser } = useContext(DataCentral)
+ 
   return (
     <Router>
       <Header />
@@ -26,11 +30,22 @@ const App = () => {
           path="/buySell/:id/:currencyName/:currencyQuantity"
           component={BankAccountForm}
         />
+        <Route
+          path="/buySell2/:id/:currencyName/:currencyQuantity/:fiatValue"
+          component={
+            currentUser.kycVerification
+              ? BuyingBankForm
+              : user
+              ? UserProfile
+              : Login
+          }
+        />
         <Route path="/login" component={Login} />
-
         <Route path="/kycform" component={user ? KycForm : Login} />
         <Route path="/createAccount" component={SignUp} />
+        <Route path="/user-profile" component={user ? UserProfile : Login} />
         <Route path="/faq" component={Faq} />
+        <Route path="/forgot-password" component={ForgotPassword} />
       </Switch>
       <Footer />
     </Router>

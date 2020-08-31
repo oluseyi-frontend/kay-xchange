@@ -13,14 +13,13 @@ const CryptoExchangeContext = (props) => {
   const [mySellingPrices, setMySellingPrices] = useState([]);
   const [myWallets, setMyWallets] = useState([]);
   const [time, setTime] = useState('')
-const [user, setUser] = useState(false)
+
+  const [user, setUser] = useState(null)
+  const [currentUser, setCurrentUser] = useState({})
   useEffect(() => {
     Axios.get(CRYPTO_PRICES).then((data) => {
       const prices = data.data;
-      setCryptoPrices(prices);
-    
-      
-      
+      setCryptoPrices(prices);     
     });
 
     const events = firebase.firestore().collection("prices");
@@ -52,6 +51,28 @@ const [user, setUser] = useState(false)
     });
   }, []);
 
+  useEffect(() => {
+    if (user) {
+       checkingIfKycIsTrue();
+    } else {
+      
+    }
+    
+  }, [user]);
+  
+  const checkingIfKycIsTrue = () => {
+    const events = firebase.firestore().collection("users").doc(user.uid)
+    events.onSnapshot((querySnapshot) => {
+      console.log(querySnapshot)
+      const tempDoc = [];
+    
+      tempDoc.push({ id: querySnapshot, ...querySnapshot.data() });
+    
+
+      setCurrentUser({ id: querySnapshot, ...querySnapshot.data()});
+      });
+  }
+
   return (
     <DataCentral.Provider
       value={{
@@ -60,7 +81,8 @@ const [user, setUser] = useState(false)
         myWallets: myWallets,
         mySellingPrices: mySellingPrices,
         user: user,
-        setUser: setUser
+        setUser: setUser,
+        currentUser: currentUser
       }}
     >
       {props.children}

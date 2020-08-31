@@ -17,7 +17,7 @@ const Footer = () => {
             &#169;2020 Kaymax All Rights Reserved
           </Grid>
           <Grid item md={4} sm={12} xs={12} className={styles.grid}>
-            <Link to="/faq">faq</Link>
+            <Link to="/faq">FAQ</Link>
           </Grid>
           <Grid item md={4} sm={12} xs={12} className={styles.anchorGrid}>
             <a variant="body2" href="https://www.google.com">

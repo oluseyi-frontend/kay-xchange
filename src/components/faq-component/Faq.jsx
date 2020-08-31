@@ -9,7 +9,7 @@ const Faq = () => {
   return (
     <div className={styles.login}>
       <Container className={styles.container} maxWidth="sm">
-        <h4>COMING SOON....I AM BEING DEVELOPED</h4>
+        <h4>COMING SOON....</h4>
       </Container>
     </div>
   );

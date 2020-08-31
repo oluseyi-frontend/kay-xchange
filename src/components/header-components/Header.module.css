@@ -21,7 +21,7 @@ svg{
   background-color: white !important;
 }
 .myHeaderActive {
-  background: linear-gradient(90deg, #70cfda 0%, #2b2fa1 45%);
+  background: linear-gradient(90deg, #165a92 0%, #3281C3 45%);
   transition: all 1.5s ease-in-out;
   transform: scale(1.00);
 }
@@ -42,18 +42,21 @@ svg{
   height: 50px;
   background-color: transparent;
 }
-
+.iconBtn svg {
+  color: white;
+  
+}
 
 @media(max-width: 1200px) {
 
 }
 @media(max-width: 992px) {
 .myHeaderActive {
-  background: linear-gradient(90deg, #70cfda 0%, #2b2fa1 45%);
+  background: linear-gradient(90deg, #165a92 0%, #3281C3 45%);
 }
 
 .myHeader {
-  background: linear-gradient(90deg, #3FDCED 0%, #262994 45%);
+  background: linear-gradient(90deg, #165a92 0%, #3281C3 45%);
   transition: all 1.5s ease-in-out;
    padding-right: 1rem !important;
    padding-left: 1rem !important;

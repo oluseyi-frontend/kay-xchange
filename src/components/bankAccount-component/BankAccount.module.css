@@ -61,6 +61,55 @@
      padding: .8rem;
 
 }
+.buyingBankForm {
+       width: 100%;
+       background: url(./../images/background3.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       align-items: center;
+       display: flex;
+}
+
+.myCard{
+    margin: 4rem 0rem 6rem 0;
+}
+.heading{
+    width: 100%;
+    margin: 1.5rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cryptoAddress{
+    margin: 1.5rem 0rem;
+}
+.address{
+    width: 100%;
+}
+
+.paystackBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.mainBtn{
+    width: 60%;
+    padding: .8rem;
+    background-color: #3F51B5;
+    border: none;
+    color: white;
+}
+.illustration {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+.illustration img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
 
 
 @media(max-width: 1200px) {
@@ -93,6 +142,7 @@
     .container form {
         margin-top: 2.5rem;
     }
+    
 
   
 }
@@ -103,6 +153,9 @@
     }
 .container form {
     margin-top: 2.5rem;
+}
+.buyingContainer {
+    padding: .5rem !important;
 }
   
 }

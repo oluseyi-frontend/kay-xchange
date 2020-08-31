@@ -23,12 +23,32 @@ const BuyForm = () => {
   const [nameOfCurrency, setNameOfCurrency] = useState("");
   const [mySellingRate, setMySellingRate] = useState(Number);
   const [prefferredFiatCurrency, setPrefferredFiatCurrency] = useState("");
+const [orderCode, setOrderCode] = useState('')
+
+   const handleOrderIdGeneneration = (event) => {
+     function randomString(length, chars) {
+       var result = "";
+       for (var i = length; i > 0; --i)
+         result += chars[Math.floor(Math.random() * chars.length)];
+       return result;
+     }
+     var rString = randomString(
+       32,
+       "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+     );
+
+     setOrderCode(rString);
+  };
+  
+  useEffect(() => {
+    handleOrderIdGeneneration();
+  }, []);
 
   useEffect(() => {
     Object.keys(cryptoPrices).map((key) => {
       const newkey = key.toLowerCase();
       if (newkey === nameOfCurrency) {
-        console.log(cryptoPrices[key].USD);
+     
         setPrice(cryptoPrices[key].USD);
       }
     });
@@ -53,7 +73,7 @@ const BuyForm = () => {
 
   const handleChange = (event) => {
     const { value, name } = event.target;
-    console.log(name);
+  
     if (name === "Currency to Buy") {
       setNameOfCurrency(value);
       setQuantityInFiat(0);
@@ -184,7 +204,10 @@ const BuyForm = () => {
           </Typography>
           <FormControl variant="outlined" className={styles.continueBtn}>
             <Button disabled={message} variant="contained" color="primary">
-              <Link className={styles.anchor} to="/kycform">
+              <Link
+                className={styles.anchor}
+                to={`/buySell2/${orderCode}/${nameOfCurrency}/${quantityInCrypto}/${fiatValue}`}
+              >
                 Continue
               </Link>
             </Button>

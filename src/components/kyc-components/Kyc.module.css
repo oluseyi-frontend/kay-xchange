@@ -1,0 +1,124 @@
+.accountContent {
+
+    background: url(./../images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.typo h5 {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.illustration img {
+    height: 200px;
+    width: 200px;
+  border-radius: 50%;
+}
+
+.divider {
+
+    margin-bottom: 3rem !important;
+    width: 70%;
+}
+
+.typeOfId {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.select{
+    width: 100% !important;
+}
+
+.frontView{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+
+
+.backView {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+.userHolding {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+
+
+.submitBtn {
+    width: 60%;
+    margin-bottom: 1.5rem;
+}
+
+.submitBtn button{
+    width: 100%;
+    padding: .6rem ;
+}
+
+label svg {
+    margin-left: 1rem;
+}
+
+
+
+.label{
+    display: flex;
+    flex-direction: column;   
+}
+
+.divider2 {
+    margin-bottom: 1rem !important;
+    width: 100%;
+}
+
+
+.typo2{
+    font-size: 1rem !important;
+    margin-bottom: .5rem !important;
+}
+
+@media(max-width: 1200px) {}
+
+@media(max-width: 992px) {}
+
+@media(max-width: 768px) {
+.container h5{
+    font-size: .9rem;
+}
+.container h6 {
+    font-size: .8rem !important;
+}
+}
+
+@media(max-width: 576px) {
+   
+
+    .container {
+        padding: .4rem !important;
+    }
+}
+
+@media(max-width: 380px) {}

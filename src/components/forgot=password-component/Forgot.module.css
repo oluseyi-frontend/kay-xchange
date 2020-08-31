@@ -1,0 +1,38 @@
+.forgotPassword{
+    background: url(./../images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typo h5 {
+    color: rgba(0, 0, 0, 0.26);
+}
+.divider {
+    margin-bottom: 3rem !important;
+    margin-top: .5rem !important;
+    width: 70%;
+}
+.textField{
+    width: 100% ;
+    
+}
+.illustration img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.btn{
+    width: 60%;
+    margin: 1.5rem 0rem !important;
+    padding: .7rem !important;
+}
+
+@media(max-width: 520px){
+    .container {
+        padding: .5rem !important;
+    }
+}

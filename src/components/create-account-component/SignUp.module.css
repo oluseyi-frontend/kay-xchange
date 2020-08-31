@@ -1,5 +1,5 @@
 .login {
-    height: 90vh;
+  
     background: url(./../images/background3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,3 +13,91 @@
     display: flex;
     text-align: center;
 }
+
+.illustration img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.divider {
+
+    margin-bottom: 3rem !important;
+    width: 70%;
+}
+.typo{
+    margin-top: 1rem;
+}
+.typo h5 {
+    color: rgba(0, 0, 0, 0.26);
+}
+.names{
+    width: 100% !important;
+}
+
+.email{
+    width: 100% !important;
+}
+
+.password {
+    width: 100%;
+}
+
+.phone{
+    width: 100%;
+    margin-bottom: 2rem !important;
+}
+
+.createBtn  {
+    width: 100%;
+     width: 100%;
+     
+}
+.createBtn button {
+  padding: .8rem !important;
+    width: 100%;
+   
+}
+.link {
+    margin-top: 1rem;
+}
+
+@media(max-width: 1200px) {}
+
+@media(max-width: 992px) {}
+
+@media(max-width: 768px) {
+.container h5{
+    font-size: 1rem;
+}
+   
+}
+
+@media(max-width: 576px) {
+    .links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+         font-size: .8rem;
+    }
+
+    .links a {
+        text-decoration: none !important;
+        color: #3F51B5;
+        font-size: .8rem;
+    }
+
+    .createBtn p {
+        margin-top: 1rem;
+        font-size: .8rem;
+    }
+
+    .container {
+        padding: .4rem !important;
+    }
+}
+
+@media(max-width: 380px) {}

@@ -104,6 +104,12 @@
         font-weight: 1000;
         color: white;
     }
+    .my-fading-carousel button {
+        width: 80%;
+        background-color: #41B661;
+        margin-top: 1.5rem;
+        font-size: .7rem;
+    }
 
     .my-fading-carousel p {
         font-size: .8rem;

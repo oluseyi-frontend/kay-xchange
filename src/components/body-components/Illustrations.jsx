@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import styles from "./Body.module.css";
 import { Grid, Typography } from "@material-ui/core";
 import illustration1 from "./../images/illusration.jpg";
+import illustration2 from "./../images/4560.jpg";
+import illustration3 from "./../images/front.jpg";
 
 const Illustrations = () => {
   return (
@@ -15,14 +17,14 @@ const Illustrations = () => {
           </Typography>
         </Grid>
         <Grid item md={4} sm={12} xs={12} className={styles.grid}>
-          <img src={illustration1} alt="" />
+          <img src={illustration2} alt="" />
           <Typography className={styles.typo} variant="p">
             It’s our mission to provide you with a delightful crypto trading
             experience!
           </Typography>
         </Grid>
         <Grid item md={4} sm={12} xs={12} className={styles.grid}>
-          <img src={illustration1} alt="" />
+          <img src={illustration3} alt="" />
           <Typography className={styles.typo} variant="p">
             It’s our mission to provide you with a delightful crypto trading
             experience!
