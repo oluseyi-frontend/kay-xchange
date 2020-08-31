@@ -115,6 +115,9 @@ const UserProfile = () => {
                 <Typography variant="h6" component="h6">
                   {currentUser.firstName} {currentUser.lastName}
                 </Typography>
+                <Typography style={{color: 'red'}} >
+                N:B Your Kyc verification has to be verified before you can buy cryptocurrencies, fill kyc form before proceeding to buy cryptocurrencis on this website 
+                </Typography>
               </CardContent>
             </Card>
           </Grid>
@@ -188,16 +191,15 @@ const UserProfile = () => {
                   color="inherit"
                   className={styles.iconBtn}
                 >
-                  <ReceiptIcon/>
+                  <ReceiptIcon />
                 </IconButton>
               </div>
               <Divider className={styles.divider2} variant="middle" />
               <TableContainer className={classes.container}>
                 {orders.length === 0 ? (
-                    <Typography variant="h6" component="h6">
+                  <Typography variant="h6" component="h6">
                     No previous Transaction
                   </Typography>
-                 
                 ) : (
                   <Table stickyHeader aria-label="sticky table">
                     <TableHead>

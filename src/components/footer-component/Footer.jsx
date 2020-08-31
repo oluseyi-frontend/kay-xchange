@@ -20,16 +20,19 @@ const Footer = () => {
             <Link to="/faq">FAQ</Link>
           </Grid>
           <Grid item md={4} sm={12} xs={12} className={styles.anchorGrid}>
-            <a variant="body2" href="https://www.facebook.com">
+            <a variant="body2" href="https://www.facebook.com/alawiye.kayode">
               <FaFacebookF />
             </a>
-            <a variant="body2" href="https://www.twitter.com">
+            <a variant="body2" href="https://www.twitter.com/_oluseyi__">
               <FaTwitter />
             </a>
-            <a variant="body2" href="https://www.instagram.com">
+            {/* <a variant="body2" href="https://www.instagram.com">
               <FaInstagram />
-            </a>
-            <a variant="body2" href="https://www.telegram.com">
+            </a> */}
+            <a
+              variant="body2"
+              href="https://t.me/joinchat/TpfU4xc4ycQRSZF4glgoag"
+            >
               <FaTelegram />
             </a>
           </Grid>
