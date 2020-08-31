@@ -38,7 +38,6 @@ const SellForm = () => {
     Object.keys(cryptoPrices).map((key) => {
     const newkey = key.toLowerCase()
       if (newkey === nameOfCurrency) {
-        console.log(cryptoPrices[key].USD) 
         setPrice(cryptoPrices[key].USD)
       }
     })
@@ -83,7 +82,7 @@ const SellForm = () => {
 
   const handleChange = (event) => {
     const { value, name } = event.target;
-    console.log(name);
+ 
     if (name === "Currency to Sell") {
       setNameOfCurrency(value);
       setQuantityInFiat(0);
@@ -126,7 +125,7 @@ const SellForm = () => {
               <option aria-label="None" value={null} />
               {Object.keys(cryptoPrices).map((key) => {
                 const newkey = key.toLowerCase();
-                return <option value={newkey}>{newkey}</option>;
+                return <option key={newkey} value={newkey}>{newkey}</option>;
               })}
             </Select>
           </FormControl>

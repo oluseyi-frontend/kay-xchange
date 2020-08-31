@@ -51,7 +51,7 @@ const BuyingBankForm = ({ match }) => {
       });
     },
 
-    onClose: () => alert("Wait! Don't leave :("),
+   
   };
 
   const handleChange = (event) => {

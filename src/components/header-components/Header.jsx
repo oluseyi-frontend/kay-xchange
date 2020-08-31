@@ -1,16 +1,16 @@
 import React, { useState, useContext } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import styles from "./Header.module.css";
-import { Button,  Menu, IconButton, MenuItem } from "@material-ui/core";
+import { Button, Menu, IconButton, MenuItem } from "@material-ui/core";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import { Link } from "react-router-dom";
 import logo from "./../images/logo.jpg";
-import { DataCentral } from './../context-component/Context';
-import firebase from './../firebase-component/firebase';
+import { DataCentral } from "./../context-component/Context";
+import firebase from "./../firebase-component/firebase";
 
 const Header = () => {
   const [nav, setNav] = useState(true);
-const {user, setUser} = useContext(DataCentral)
+  const { user, setUser } = useContext(DataCentral);
   window.addEventListener("scroll", () => {
     const scrollHeight = window.pageYOffset;
     const width = window.innerWidth;
@@ -23,26 +23,29 @@ const {user, setUser} = useContext(DataCentral)
     }
   });
   const handleLogOut = () => {
-    firebase.auth().signOut().then(() => {
-      setUser(null)
-    })
-  }
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        setUser(null);
+      });
+  };
 
-   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const [auth, setAuth] = React.useState(true);
 
-   const handleChange = (event) => {
-     setAuth(event.target.checked);
-   };
+  const handleChange = (event) => {
+    setAuth(event.target.checked);
+  };
 
-   const handleMenu = (event) => {
-     setAnchorEl(event.currentTarget);
-   };
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
-   const handleClose = () => {
-     setAnchorEl(null);
-   };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <Navbar
       sticky="top"
@@ -74,23 +77,20 @@ const {user, setUser} = useContext(DataCentral)
             fill="#3ED2E8"
           />
         </svg>
-        <span style={{ color: "white" }}>
-          <strong style={{ fontFamily: "cursive" }}>X</strong>-change
-        </span>
       </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Link to="/expressTransaction" className="nav-link">
-            <Button variant="outline" color="primary" className={styles.btn}>
+            <Button  color="primary" className={styles.btn}>
               Express Transaction
             </Button>
           </Link>
           {user ? null : (
             <Link to="/login" className="nav-link">
               <Button
-                variant="outline"
-                color="secondary"
+              
+                color="primary"
                 className={styles.btn}
               >
                 Sign In
@@ -109,7 +109,9 @@ const {user, setUser} = useContext(DataCentral)
               >
                 <AccountCircle />
               </IconButton>
+
               <Menu
+                className={styles.menuList}
                 id="menu-appbar"
                 anchorEl={anchorEl}
                 anchorOrigin={{
@@ -124,20 +126,24 @@ const {user, setUser} = useContext(DataCentral)
                 open={open}
                 onClose={handleClose}
               >
-                <MenuItem onClick={handleClose}>
+                <MenuItem className={styles.menuItem} onClick={handleClose}>
                   {" "}
-                  <Link to='/user-profile'>Profile</Link>{" "}
+                  <Link to="/user-profile">Profile</Link>{" "}
                 </MenuItem>
-                <MenuItem onClick={handleClose}>
+
+                <MenuItem className={styles.menuItem} onClick={handleClose}>
                   {" "}
-                  <Link to='/kycform'>Kyc Form</Link>{" "}
+                  <Link to="/kycform">Kyc Form</Link>{" "}
                 </MenuItem>
-                <MenuItem onClick={() => {
-                  handleClose()
-                  handleLogOut()
-                }}>
+                <MenuItem
+                  className={styles.menuItem}
+                  onClick={() => {
+                    handleClose();
+                    handleLogOut();
+                  }}
+                >
                   {" "}
-                  <Link >Log out</Link>{" "}
+                  <Link>Log out</Link>{" "}
                 </MenuItem>
               </Menu>
             </div>

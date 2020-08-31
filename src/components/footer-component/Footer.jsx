@@ -20,7 +20,7 @@ const Footer = () => {
             <Link to="/faq">FAQ</Link>
           </Grid>
           <Grid item md={4} sm={12} xs={12} className={styles.anchorGrid}>
-            <a variant="body2" href="https://www.google.com">
+            <a variant="body2" href="https://www.facebook.com">
               <FaFacebookF />
             </a>
             <a variant="body2" href="https://www.twitter.com">

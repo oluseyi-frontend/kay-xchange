@@ -38,7 +38,7 @@ const BuySell = () => {
           className={styles.chip}
           label={myPrices.map((myRate) => {
             return (
-              <p style={{ display: "flex" }}>
+              <p  key={myRate.id} style={{ display: "flex" }}>
                 {" "}
                 {myRate.id} Buying rate: {myRate.price}/$,{" "}
               </p>
@@ -49,7 +49,7 @@ const BuySell = () => {
           className={styles.chip}
           label={mySellingPrices.map((myRate) => {
             return (
-              <p style={{ display: "flex" }}>
+              <p key={myRate.id} style={{ display: "flex" }}>
                 {" "}
                 {myRate.id} Selling rate: {myRate.price}/$,{" "}
               </p>

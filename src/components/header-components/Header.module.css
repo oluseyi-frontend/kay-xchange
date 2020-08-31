@@ -46,6 +46,27 @@ svg{
   color: white;
   
 }
+.iconBtn{
+  background-color:#3F51B5 !important;
+}
+.menuList ul {
+  padding: 0 !important;
+}
+.menuItem a {
+  background-color: #3F51B5;
+  padding: .5rem;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 100%;
+}
+.menuItem a:hover {
+  background-color: #ffffff;
+  padding: .5rem;
+  color: #3F51B5;
+  border-radius: 5px;
+  text-decoration: none;
+}
 
 @media(max-width: 1200px) {
 
