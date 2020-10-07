@@ -25,9 +25,9 @@ const BankAccountForm = ({ match }) => {
 
   const [WALLET_ID, SETWALLET_ID] = useState("");
   
-  const API = `https://cryptapi.io/api/${CURRENCY_NAME}/create/?callback=http%3A%2F%2Flocalhost%3A3000%2FexpressTransaction/${ID}&address=${WALLET_ID}&email=alawiyeolukayode%40gmail.com`;
+  const API = `https://api.cryptapi.io/${CURRENCY_NAME}/create/?callback=http%3A%2F%2Flocalhost%3A3000%2FexpressTransaction/${ID}&address=${WALLET_ID}&email=alawiyeolukayode%40gmail.com`;
 
-  const CALLBACK_API = `https://cryptapi.io/api/${CURRENCY_NAME}/logs/?callback=http%3A%2F%2Flocalhost%3A3000%2FexpressTransaction/${ID}`;
+  const CALLBACK_API = `https://api.cryptapi.io/${CURRENCY_NAME}/logs/?callback=http%3A%2F%2Flocalhost%3A3000%2FexpressTransaction/${ID}`;
   const [openModal, setOpenModal] = useState(false)
   const [openSteemModal, setOpenSteemModal] = useState(false)
   const [addressIn, setAddressIn] = useState("");
