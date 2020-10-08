@@ -17,10 +17,18 @@ const CryptoExchangeContext = (props) => {
   const [user, setUser] = useState(null)
   const [currentUser, setCurrentUser] = useState({})
   useEffect(() => {
+    
     Axios.get(CRYPTO_PRICES).then((data) => {
       const prices = data.data;
       setCryptoPrices(prices);     
     });
+  
+    Axios.get("https://api.cryptapi.io/btc/info/").then((data) => {
+      console.log(data)
+    }).catch ((err) => {
+      console.log(err)
+    })
+   
 
     const events = firebase.firestore().collection("prices");
     events.onSnapshot((querySnapshot) => {
